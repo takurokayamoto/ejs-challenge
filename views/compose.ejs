@@ -3,8 +3,16 @@
 <h1>Compose</h1>
 
 <form action="/compose" method="post">
-    <input type="text" name="compose" id="" />
-    <button type="submit" class="btn" name="btn">Publish</button>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Title</label>
+        <input type="text" class="form-control" id="titleInput" placeholder="" name="composeTitle" />
+        <small id="emailHelp" class="form-text text-muted">Share your day so people can enjoy!</small>
+    </div>
+    <div class="form-group">
+        <label for="Post">Post</label>
+        <textarea class="form-control" id="postInput" rows="5" name="composeText"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" name="btn">Publish</button>
 </form>
 
 <%- include partials/footer -%>
